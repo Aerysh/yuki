@@ -20,11 +20,26 @@ body {
 }
   
 
-.callout {
+.callout-primary {
   padding: 20px;
   margin: 20px 0;
   border: 1px solid #428bca;
   border-left-width: 5px;
   border-radius: 3px;
+}
 
+.callout-success {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #5cb85c;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.callout-danger {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #d9534f;
+  border-left-width: 5px;
+  border-radius: 3px;
 }

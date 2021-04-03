@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -8,36 +8,39 @@
         <link href="{{asset('main.css')}}" rel="stylesheet">
         {{-- CSS --}}
         @yield('css')
-        <title>@yield('title') | Yuki</title>
+        <title>@yield('title')</title>
     </head>
     <body>
         {{-- Navbar --}}
         <header style="padding-bottom: 25px">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="/" style="font-family: 'Comfortaa', sans-serif;">Yuki</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <a class="navbar-brand" href="admin">Yuki Admin</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
+                                <a class="nav-link active" aria-current="page" href="admin">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">All Entry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">New Entry</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/genre">Genre List</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/recommended">Recommended</a>
-                            </li>
-                        </ul>
+                        <div class="d-flex">
+                            <ul class="navbar-nav me auto-mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Logout</a>
+                                </li>
+                            </ul>
+                        </div>  
                     </div>
                 </div>
-            </nav>
+            </nav>    
         </header>
 
         {{-- Content --}}

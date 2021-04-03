@@ -1,9 +1,9 @@
 @extends('template.master')
 
-@section('title', 'Home | Yuki')
+@section('title', 'Home')
 
 @section('alert')
-    <div class="callout callout-primary">
+    <div class="callout-primary">
         <h4>Alert</h4>
         Alert Testing
     </div>

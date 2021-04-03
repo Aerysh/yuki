@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('pages/home');
 });
 
-Route::get('/login', function (){
-    return view('admin/login');
-});
+Auth::routes(['register' => false]);
+
+Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
+Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
